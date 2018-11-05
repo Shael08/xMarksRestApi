@@ -26,7 +26,7 @@ SECRET_KEY = '544eaaf9-15ce-4b48-91f0-b213f6269581'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '.pythonanywhere.com', 'shael.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.pythonanywhere.com', 'shael.pythonanywhere.com']
 
 
 # Application definition
@@ -78,14 +78,10 @@ WSGI_APPLICATION = 'api.wsgi.application'
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'bdtnswci',
-        'USER': 'bdtnswci',
-        'PASSWORD': '9WQW2RU6P5lSmLU1D4ddcHMMUzg2J6gH',
-        'HOST': 'dumbo.db.elephantsql.com',
-        'PORT': '',
-    }
+	'default': {
+	'ENGINE': 'django.db.backends.sqlite3',
+	'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+	}
 }
 
 # Password validation
