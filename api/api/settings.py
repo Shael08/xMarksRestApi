@@ -26,7 +26,7 @@ SECRET_KEY = '544eaaf9-15ce-4b48-91f0-b213f6269581'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '.azurewebsites.net']
+ALLOWED_HOSTS = ['localhost', '.pythonanywhere.com', 'shael.pythonanywhere.com']
 
 
 # Application definition
