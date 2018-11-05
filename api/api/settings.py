@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.pythonanywhere.com', 'shael.pythonanywhere.com']
 
+API_LIMIT_PER_PAGE = 0
 
 # Application definition
 
