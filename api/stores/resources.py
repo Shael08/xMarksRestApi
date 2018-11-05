@@ -9,12 +9,14 @@ class StoreTypeResource(ModelResource):
         queryset = StoreType.objects.all()
         allowed_methods = ['get']
         excludes = ['id', 'resource_uri']
+        include_resource_uri = False
 
 class OpeningHoursResource(ModelResource):
     class Meta:
         queryset = OpeningHours.objects.all()
         allowed_methods = ['get']
         excludes = ['resource_uri', 'id']
+        include_resource_uri = False
 
 class StoreResource(ModelResource):
     types = fields.ForeignKey(StoreTypeResource, 'type', full=True)
@@ -22,5 +24,4 @@ class StoreResource(ModelResource):
     class Meta:
         queryset = Store.objects.all()
         allowed_methods = ['get']
-        excludes = ['resource_uri']
-
+        include_resource_uri = False
