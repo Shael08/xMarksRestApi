@@ -12,7 +12,7 @@ WEEKDAYS = [
     (4, _("Thursday")),
     (5, _("Friday")),
     (6, _("Saturday")),
-    (7, _("Sunday")),
+    (0, _("Sunday")),
 ]
 
 class StoreType(models.Model):
